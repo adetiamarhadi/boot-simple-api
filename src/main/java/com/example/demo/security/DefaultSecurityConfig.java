@@ -23,7 +23,7 @@ public class DefaultSecurityConfig {
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of("http://157.230.42.232/"));
-        configuration.setAllowedMethods(List.of("GET", "POST", "OPTIONS"));
+        configuration.setAllowedMethods(List.of("GET", "POST"));
         configuration.setAllowCredentials(true);
         configuration.setAllowedHeaders(Collections.singletonList("*"));
         configuration.setExposedHeaders(Collections.singletonList("*"));
