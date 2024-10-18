@@ -1,9 +1,6 @@
 package com.example.demo.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/v1")
@@ -15,7 +12,7 @@ public class IndexController {
     }
 
     @PostMapping("/hai")
-    public String sayHai() {
+    public String sayHai(@RequestBody HaiRequest haiRequest) {
         return "Hai";
     }
 }
